@@ -1,0 +1,12 @@
+[2025-05-19T17:54:35.194Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:5000, connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-19T17:54:35.283Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T17:56:11.586Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:5000, connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-19T17:56:11.588Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T17:56:11.589Z] Erro ao salvar ou atualizar palavra-chave: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T17:56:11.589Z] Erro ao salvar busca: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T17:56:11.590Z] Erro ao buscar histórico de buscas: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T18:01:51.558Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:5000, connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-19T18:01:51.560Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T18:01:51.561Z] Erro ao salvar ou atualizar palavra-chave: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T18:01:51.562Z] Erro ao salvar busca: Cannot read properties of undefined (reading 'collection')
+[2025-05-19T18:01:51.562Z] Erro ao buscar histórico de buscas: Cannot read properties of undefined (reading 'collection')

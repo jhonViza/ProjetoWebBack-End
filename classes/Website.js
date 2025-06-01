@@ -22,7 +22,7 @@ class Website{
     static async buscaPorUrl(url){
         try{
             const db = getDB();
-            return await db.collection('websites').findOne({urls});
+            return await db.collection('websites').findOne({url});
         } catch(err){
             Logger.log("Erro ao buscar website: "+err.message);
         }
@@ -34,6 +34,30 @@ class Website{
             await db.collection("websites").deleteOne({url});
         }catch(err){
             Logger.log("Erro ao deletar website: "+err.message);
+        }
+    }
+
+    async atualizar(novaUrl, novoTitulo, novaDescricao){
+        try{
+            const db = getDB();
+            const novosDados = {
+                ...(novaUrl && {url:novaUrl}),
+                ...(novoTitulo && {titulo:novoTitulo}),
+                ...(novaDescricao && {descricao:novaDescricao})
+            };
+
+            await db.collection("websites").updateOne(
+                {url: this.url},
+                {$set: novosDados}
+            );
+
+            if (novaUrl) this.url = novaUrl;
+            if (novoTitulo) this.titulo = novoTitulo;
+            if (novaDescricao) this.descricao = novaDescricao;
+
+            console.log("Website atualizado com sucesso!!");
+        } catch(err){
+            Logger.log("Erro ao atualizar website: " + err.message);
         }
     }
 }

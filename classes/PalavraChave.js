@@ -28,7 +28,7 @@ class PalavraChave{
     static async buscar(texto){
         try{
             const db = getDB();
-            return await db.collection("palavras_chave").findOne({texto: texto.toLowCase()});
+            return await db.collection("palavras_chave").findOne({texto: texto.toLowerCase()});
         }catch(err){
             Logger.log("Erro ao buscar palavra-chave: "+err.message);
         }

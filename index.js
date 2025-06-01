@@ -9,11 +9,13 @@ async function main(){
     const site = new Website("https://www.exemplo.com","Site Exemplo", "Descrição do site exemplo.");
     await site.salvar();
 
+    await site.atualizar("https://www.exemploatualizado.com", "Site Atualizado", "Nova descrição do site.");
+
     const palavra = new PalavraChave("educação");
-    palavra.websites.push("https://www.exemplo.com");
+    palavra.websites.push("https://www.exemploatualizado.com");
     await palavra.salvarOuAtualizar();
 
-    const resultado = [site.url]; // Simula que o site foi retornado na busca
+    const resultado = [site.url];
     const busca = new Busca("educação", resultado);
     await busca.salvar();
 

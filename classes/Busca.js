@@ -30,6 +30,18 @@ class Busca{
             Logger.log("Erro ao buscar histórico de buscas: "+err.message);
         }
     }
+
+    static async deletarPorTermo(termo){
+        try{
+            const db = getDB();
+            const resultado = await db.collection("buscas").deleteMany({
+                termo: termo.toLowerCase()
+            });
+            console.log(`Foram deletadas ${resultado.deletedCount} buscas com o termo '${termo}'.`);
+        } catch(err){
+            Logger.log("Erro ao deletar buscas: " + err.message);
+        }
+    }
 }
 
 module.exports = Busca;

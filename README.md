@@ -42,8 +42,10 @@ Aplicação web Node.js com Express que permite cadastrar websites e buscar por 
 I. Faça login (Usuário fixo: admin@teste.com / Senha: 123456)
 
 II. Na página inicial, cadastre um website:
-    Informe a URL completa (ex: https://exemplo.com)
-    Informe as palavras-chave associadas (separadas por vírgula)
+    
+    *Informe a URL completa (ex: https://exemplo.com)
+    
+    *Informe as palavras-chave associadas (separadas por vírgula)
 
 III. Use a busca para pesquisar por uma palavra-chave cadastrada.
 

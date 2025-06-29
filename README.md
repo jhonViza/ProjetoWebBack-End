@@ -21,15 +21,18 @@ Aplicação web Node.js com Express que permite cadastrar websites e buscar por 
     cd ProjetoWebBack-End
 
 2. Instale as dependências:
+
    npm install
 
-3. Certifique-se que o MongoDB está rodando. No Windows, por exemplo:
+4. Certifique-se que o MongoDB está rodando. No Windows, por exemplo:
+
    net start MongoDB
 
-4. Inicie o servidor:
+5. Inicie o servidor:
+
    npm start
 
-5. Abra o navegador e acesse:
+7. Abra o navegador e acesse:
    http://localhost:3000/login
    
 ---
@@ -37,6 +40,7 @@ Aplicação web Node.js com Express que permite cadastrar websites e buscar por 
 **Como testar o funcionamento**
 
 I. Faça login (Usuário fixo: admin@teste.com / Senha: 123456)
+
 II. Na página inicial, cadastre um website:
     Informe a URL completa (ex: https://exemplo.com)
     Informe as palavras-chave associadas (separadas por vírgula)

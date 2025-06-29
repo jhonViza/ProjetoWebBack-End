@@ -1,26 +1,27 @@
-const { connect } = require("./database/MongoConnection");
-const Website = require("./classes/Website");
-const PalavraChave = require("./classes/PalavraChave");
-const Busca = require("./classes/Busca");
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const MongoConnection = require('./database/MongoConnection');
+const authRoutes = require('./routes/authRoutes');
+const websiteRoutes = require('./routes/websiteRoutes');
 
-async function main(){
-    await connect();
+const app = express();
+const PORT = 3000;
 
-    const site = new Website("https://www.exemplo.com","Site Exemplo", "Descrição do site exemplo.");
-    await site.salvar();
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static('public'));
+app.use(session({
+    secret: 'romero223',
+    resave: false,
+    saveUninitialized: false
+}));
+app.set('view engine', 'ejs');
 
-    await site.atualizar("https://www.exemploatualizado.com", "Site Atualizado", "Nova descrição do site.");
+app.use('/', authRoutes);
+app.use('/websites', websiteRoutes);
 
-    const palavra = new PalavraChave("educação");
-    palavra.websites.push("https://www.exemploatualizado.com");
-    await palavra.salvarOuAtualizar();
-
-    const resultado = [site.url];
-    const busca = new Busca("educação", resultado);
-    await busca.salvar();
-
-    const historico = await Busca.historico("educação");
-    console.log("Histórico de buscas para 'educação': ", historico);
-}
-
-main();
+MongoConnection.connect().then(()=>{
+    app.listen(PORT, ()=>{
+        console.log(`Servidor rodando em http://localhost:${PORT}`);
+    });
+});

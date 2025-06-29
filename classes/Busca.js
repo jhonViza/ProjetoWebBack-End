@@ -42,6 +42,28 @@ class Busca{
             Logger.log("Erro ao deletar buscas: " + err.message);
         }
     }
+
+    static async buscar(termo){
+        if (!termo || termo.trim() === ""){
+            return[];
+        }
+        try {
+            const db = getDB();
+            const palavra = termo.toLowerCase();
+
+            const resultados = await db.collection("websites")
+            .find({ palavras: { $elemMatch: { $regex: `^${palavra}$`, $options: "i" } } })
+            .toArray();
+
+            const buscaObj = new Busca(palavra, resultados);
+            await buscaObj.salvar();
+            
+            return resultados;
+        } catch (err) {
+            Logger.log("Erro ao buscar websites: " + err.message);
+            return [];
+        }
+    }
 }
 
 module.exports = Busca;

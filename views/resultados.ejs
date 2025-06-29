@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<h2>Resultados da Busca</h2>
+
+<% if (resultados.length === 0) { %>
+    <p>Nenhum site encontrado com essa palavra-chave.</p>
+<% } else { %>
+    <ul>
+        <% resultados.forEach(site => { %>
+            <li>
+                <a href="<%= site.url %>" target="_blank"><%= site.url %></a> -
+                Palavras-chave: <%= site.palavras.join(', ') %>
+            </li>
+        <% }) %>
+    </ul>
+<% } %>
+
+<a href="/websites/home">Voltar</a>
+
+<%- include('partials/footer') %>

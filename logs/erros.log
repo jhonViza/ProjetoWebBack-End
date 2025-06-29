@@ -10,3 +10,22 @@
 [2025-05-19T18:01:51.561Z] Erro ao salvar ou atualizar palavra-chave: Cannot read properties of undefined (reading 'collection')
 [2025-05-19T18:01:51.562Z] Erro ao salvar busca: Cannot read properties of undefined (reading 'collection')
 [2025-05-19T18:01:51.562Z] Erro ao buscar histórico de buscas: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T18:36:09.826Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:00:16.505Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:09:53.800Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:12:55.123Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:26:07.230Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:26:26.577Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:31:31.930Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:31:53.017Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:31:57.527Z] Erro ao buscar websites: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:32:08.681Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:32:13.016Z] Erro ao buscar websites: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:32:45.439Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:32:51.765Z] Erro ao buscar websites: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:36:30.956Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:36:55.402Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:37:00.215Z] Erro ao buscar websites: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:40:04.768Z] Erro na conexão com o MongoDB: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+[2025-06-29T19:40:45.024Z] Erro ao salvar website: Cannot read properties of undefined (reading 'collection')
+[2025-06-29T19:40:48.259Z] Erro ao buscar websites: Cannot read properties of undefined (reading 'collection')

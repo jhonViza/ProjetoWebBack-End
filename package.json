@@ -10,6 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "mongobd": "^0.0.1-security.0"
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongodb": "^0.0.1-security.0",
+    "mongoose": "^8.16.1"
   }
 }

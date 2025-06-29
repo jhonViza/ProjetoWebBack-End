@@ -16,25 +16,23 @@ Aplicação web Node.js com Express que permite cadastrar websites e buscar por 
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/jhonViza/ProjetoWebBack-End.git
-cd ProjetoWebBack-End
+   ```bash
+    git clone https://github.com/jhonViza/ProjetoWebBack-End.git
+    cd ProjetoWebBack-End
 
 2. Instale as dependências:
-
-npm install
+   npm install
 
 3. Certifique-se que o MongoDB está rodando. No Windows, por exemplo:
-
-net start MongoDB
+   net start MongoDB
 
 4. Inicie o servidor:
-
-npm start
+   npm start
 
 5. Abra o navegador e acesse:
-
-http://localhost:3000/login
+   http://localhost:3000/login
+   
+---
 
 **Como testar o funcionamento**
 
